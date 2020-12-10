@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title> 计算器 </title>
+<script type="text/javascript">   
+
+
+     function count(){
+     	var a = document.getElementById("txt1").value;
+     	var b = document.getElementById("txt2").value;
+     	var c = document.getElementById("select").value;
+     	switch (c) {
+     		case "+": 
+     		document.getElementById("result").value=parseInt(a)+parseInt(b);
+     		break;
+     		case "-":
+     		document.getElementById("result").value=parseInt(a-b);
+     		break;
+     		case "*":
+     		document.getElementById("result").value=parseInt(a*b);
+     		break;
+     		case "/":
+     		document.getElementById("result").value=parseInt(a/b);
+     		break;
+     		default:
+     		break;
+     	}
+     }
+</script>   
+</head>
+<body>
+	 <input type='text' id='txt1' placeholder="1"/> 
+   <select id='select'>
+		<option value='+'>+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+   </select>
+   <input type='text' id='txt2' placeholder="2"/> 
+   <input type='button' onclick="count()" value=' = ' /> 
+   <input style="width:150px;" type='text' id='result' />   
+
+ 
+
+</body>
+</html>
