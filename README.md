@@ -1,1 +1,1 @@
-# js-demo
+# Some demos for practicing js.

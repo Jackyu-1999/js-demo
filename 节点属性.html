@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>节点属性</title>
+</head>
+<body>
+  <ul>
+     <li>javascript</li>
+     <li>HTML/CSS</li>
+     <li>jQuery</li>     
+  </ul>
+  <script type="text/javascript">
+    var lists = document.getElementsByTagName("li");
+    for(var i=0;i<lists.length;i++)
+    {
+        document.write("第"+i+"个节点的名称是"+lists[i].nodeName+"<br  />");
+        document.write("第"+i+"个节点的值是"+lists[i].nodeValue+"<br  />");
+        document.write("第"+i+"个节点的类型是"+lists[i].nodeType+"<br  />");
+        document.write("<br  />");
+    }
+  </script>
+</body>
+</html>

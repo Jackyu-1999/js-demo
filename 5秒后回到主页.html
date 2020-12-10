@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>浏览器对象</title>  
+  <meta http-equiv="Content-Type" content="text/html; charset=gkb"/>   
+ </head>
+ <body>
+  <!--先编写好网页布局-->
+  <h3>操作成功</h3>
+  <span>
+      <b id="second">5</b>秒后回到主页 <a href="javascript:jump();">返回</a>
+  </span>
+ 
+  <script type="text/javascript">  
+   //获取显示秒数的元素，通过定时器来更改秒数。
+  var sec = document.getElementById("second");
+  var i=5;
+  var timer = setInterval(function(){
+      i--;
+      sec.innerHTML = i;   
+      if(i ==1){
+          window.location.href="http://baidu.com";
+      }
+  },1000) 
+  
+   //通过window的location和history对象来控制网页的跳转。
+   function jump(){
+       window.history.back;
+   }
+   
+ </script> 
+</body>
+</html>
