@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 完成以下代码段，实现b数组对a数组的拷贝，方法越多越好
+		var a = [1,"yes",3],b;
+
+		// 1.数组遍历，push
+		b = new Array();
+		for (var i=0;i<a.length;i++) {
+			b.push(a[i]);
+		}
+		console.log(b);
+
+		// 2.concat()
+		b = [].concat(a);
+		console.log(b);
+
+		// 3.slice()
+		b = a.slice(0);
+		console.log(b);
+
+	</script>
+</body>
+</html>

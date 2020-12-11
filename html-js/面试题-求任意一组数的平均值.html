@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function getAvg() {
+			var sum = 0,len=arguments.length,i;
+			for(i=0;i<len;i++){
+				console.log(arguments[i]);
+				sum=sum+arguments[i];
+			}
+			return sum/len;
+		}
+		var avg = getAvg(99,188,66,33,55,1);
+		document.write(avg);
+	</script>
+</body>
+</html>
