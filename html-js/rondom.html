@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 生成随机数
+		var num = Math.random();
+		console.log(num);
+
+		// 生成n到m之间的随机整数
+		function getRandom(n,m) {
+			var choise = m-n+1;   // 随机整数的个数
+			return Math.floor(Math.random()*choise+n);
+		}
+		var random1 = getRandom(2,6);
+		console.log(random1);
+
+		
+	</script>
+</body>
+</html>

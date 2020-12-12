@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var nums = [1,3,4,5,8,9];
+		function ArrayIndexof(arr, value) {
+			for (var i=0;i<arr.length;i++) {
+				if(arr[i]===value) {
+					return i;
+				}
+			}
+			return -1;
+		}
+		ArrayIndexof(nums, 8);
+	</script>
+</body>
+</html>

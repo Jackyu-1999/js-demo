@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var url = "https://baidu.com/index.html";
+		function getFileFormat(url) {
+			// 获取.在url中的位置
+			var pos = url.lastIndexOf(".");
+			console.log(pos);
+			return url.substr(pos);
+		}
+		var formatName=getFileFormat(url);
+		var picName=getFileFormat("url.jpg");
+		console.log(formatName);
+		console.log(picName);
+	</script>
+</body>
+</html>

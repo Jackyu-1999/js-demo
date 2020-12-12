@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function cameback(str) {
+			var arr = str.split("-"),newStr=arr[0];
+			console.log(arr);
+			for (var i=1,len=arr.length;i<len;i++){
+				var word = arr[i];
+				newStr+=word.charAt(0).toUpperCase()+word.substr(1);
+
+			}
+			return newStr;
+		}
+		var cameFormat = cameback("get-element-by-id");
+		console.log(cameFormat);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

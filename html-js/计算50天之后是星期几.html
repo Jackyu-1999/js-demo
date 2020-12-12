@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var today = new Date();
+		var weeks = ["日","一","二","三","四","五","六"];
+		var year = today.getFullYear();
+		var month = today.getMonth();
+		var day = today.getDate();
+		// 创建了一个目标日期对象
+		var temp = new Date(year,month,day+50); // year+1 一年后的今天， month+1 一个月后的今天
+		document.write("50天后的今天是: "+temp.getFullYear()+'-'+(temp.getMonth()+1)+'-'+temp.getDate()+'-'+'星期'+weeks[temp.getDay()]);
+	</script>
+</body>
+</html>
